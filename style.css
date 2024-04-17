@@ -1,0 +1,345 @@
+/*
+
+Theme Name: JejakCyber
+Theme URI: https://jejakhacker.com/
+Author: Arbahud Rio Daroyni
+Author URI: https://jejakhacker.com/author/game-over/
+Description: JejakCyber brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.0.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, news, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: jejakcyber
+
+*/
+
+.jc-top-navs{padding:8px 0;font-size:.85rem;color:#fff}.jc-top-navs::after{content:"";display:block;clear:both}.jc-top-navs .jc-top-navs-left{float:left}.jc-top-navs .jc-top-navs-right{float:right}.jc-top-navs .jc-top-navs-icons{position:relative;padding:0;margin:0;margin-right:-20px;list-style-type:none}.jc-top-navs .jc-top-navs-icons::after{content:"";display:block;clear:both}.jc-top-navs .jc-top-navs-icons>li{display:inline-block;margin:3px 20px;line-height:1.3;text-align:center}.jc-top-navs .jc-top-navs-icons>li>a{color:inherit;text-decoration:none;-webkit-transition:.15s color;-o-transition:.15s color;transition:.15s color}.jc-top-navs .jc-top-navs-icons>li .hover,.jc-top-navs .jc-top-navs-icons>li>a:hover,.jc-top-navs .jc-top-navs-icons>li>a:focus,.jc-top-navs .jc-top-navs-icons>li>a:active{color:#dd163b}@media screen and (max-width: 576px){.jc-top-navs .jc-top-navs-left,.jc-top-navs .jc-top-navs-right{float:none;text-align:center}.jc-top-navs .jc-top-navs-right{margin-top:10px}}@media screen and (max-width: 768px){.jc-top-navs .jc-top-navs-icons{margin-right:0}}.header{position:absolute;top:0;right:0;left:0;z-index:1000;position:relative}
+
+.nk-post-categories span,
+.nk-post-categories a {
+    padding: 2px 19px 7px;
+}
+
+.nk-social-links-col li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nk-social-links-col li a ion-icon {
+    font-size: 1.4em;
+    padding-bottom: 100%;
+}
+
+.nk-social-links li {
+    margin: 3px;
+}
+
+.nk-social-links li a {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nk-social-links li a ion-icon {
+    margin-left: 1px;
+}
+
+.nk-social-links-2 li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nk-contacts-icons li a {
+    font-size: 1.125em;
+}
+
+.nk-post-date ion-icon {
+    font-size: 1.125em;
+}
+
+.nk-gallery-item-overlay {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-full-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+}
+
+.similar-img {
+    object-fit: cover;
+    max-height: 180px;
+}
+
+.recent-img {
+    object-fit: cover;
+    height: 91px !important;
+}
+
+.avatar-img {
+    width: 35px;
+    height: auto;
+}
+
+.img-hero {
+    object-fit: cover;
+    max-height: 350px;
+}
+
+.top-gradient-opacity {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bottom-gradient-opacity {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nk-news-box-item-img.crop-center {
+    position: relative !important;
+    width: 100px !important;
+    height: 90px !important;
+    overflow: hidden !important;
+}
+
+.nk-news-box-item-img.crop-center img {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    height: 100% !important;
+    width: auto !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.is-home .nk-blog-post .nk-post-title {
+    height: 43px;
+    overflow: hidden;
+}
+
+.is-blog .nk-post-title {
+    height: 45px;
+    overflow: hidden;
+}
+
+.is-blog .nk-post-text {
+    height: 71px;
+    overflow: hidden;
+}
+
+.is-blog .nk-post-img img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.nk-widget .nk-post-title {
+    height: 58px;
+    overflow: hidden;
+    display: flex;
+}
+
+.nk-footer .nk-widget .nk-post-title {
+    height: 44px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+/*
+ * Bg Color Helper
+ */
+
+.bg-main-game {
+    background-color: #dd163b !important;
+}
+
+.bg-main-internet {
+    background-color: #38a220 !important;
+}
+
+.bg-main-aplikasi {
+    background-color: #a714b9 !important;
+}
+
+.bg-main-jasa {
+    background-color: #ef9e2b !important;
+}
+
+.bg-main-sosmed {
+    background-color: #22a2b1 !important;
+}
+
+.bg-main-umum {
+    background-color: #1464d2 !important;
+}
+
+.bg-main-anime {
+    background-color: #00fdf0 !important;
+}
+
+
+/* 
+ * Css Pos Aplikasi
+ */
+
+.download-area .card .card-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.check-area .loader {
+    margin-bottom: 20px;
+    border: 5px solid #4e585f;
+    /* Light grey */
+    border-top: 5px solid #dd163b;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.checked-area .checked-shield {
+    font-size: 30px;
+    color: #38a220;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.description-area #moreText {
+    display: none;
+}
+
+.description-area .additional-detail h5 {
+    text-transform: none;
+}
+
+.review-area hr {
+    border-top: 1px solid #293139;
+}
+
+.review-area .rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    color: #FFD600;
+    cursor: pointer;
+}
+
+.review-area .rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.review-area .rating>label:hover:before,
+.review-area .rating>label:hover~label:before {
+    opacity: 1 !important;
+}
+
+.review-area .rating>input:checked~label:before {
+    opacity: 1;
+}
+
+.review-area .rating:hover>input:checked~label:before {
+    opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+    .other-app .card .card-body .row {
+        flex-flow: row;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .download-area .card .card-img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 576px) {
+    .download-area .card .card-img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .download-area .card .card-img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+.other-app .card-app .nk-btn {
+    display: none;
+}
+
+.other-app .card-app .dev-name {
+    display: block;
+}
+
+.other-app .card-app:hover .nk-btn {
+    display: block;
+}
+
+.other-app .card-app:hover .dev-name {
+    display: none;
+}
+
+.other-app .recent-imge {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+}
+
+pre code {
+	color: #e83e8c;
+}
+
+/* 
+ * /.Css Pos Aplikasi
+ */
+
+table {
+overflow: auto;
+}

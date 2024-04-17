@@ -1,0 +1,1 @@
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-3780041077137992" data-ad-slot="3206650635" data-auto-format="mcrspv" data-full-width=""><div overflow=""></div></amp-ad>
